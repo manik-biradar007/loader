@@ -1,0 +1,41 @@
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font: 16px/1.3 roboto, arial;
+}
+
+#status {
+    width: 100px;
+    height: 100px;
+    background: url(../images/shape.svg) no-repeat;
+    position: absolute;
+    top: 48%;
+    left: 48%;
+    animation: sk-rotateplane 1.2s linear infinite;
+}
+
+@keyframes sk-rotateplane {
+    o%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+#preloader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fefefe;
+    z-index: 99;
+    height: 100%;
+}
